@@ -2,6 +2,7 @@
 import DarkVeil from "@/components/DarkVeil";
 import Navbar from "@/components/navbar";
 import { Button } from "@/components/ui/button";
+import { CometCard } from "@/components/ui/comet-card";
 
 export default function Home() {
   return (
@@ -59,9 +60,11 @@ export default function Home() {
               Browse Features
             </Button>
           </div>
-          <div className="p-1 h-fit w-fit bg-primary/65 backdrop-blur-2xl rounded-2xl overflow-hidden">
-            <img src="/ghostex.png" alt="main" />
-          </div>
+          <CometCard rotateDepth={5} translateDepth={1} >
+            <div className="p-1 h-fit w-fit bg-primary/65 backdrop-blur-2xl rounded-2xl overflow-hidden">
+              <img src="/ghostex.png" alt="main" />
+            </div>
+          </CometCard>
         </section>
         <section className="pt-16 w-full max-w-7xl mx-auto min-h-screen">
           <h1 className="font-heading font-semibold tracking-tighter leading-19 max-w-full text-center text-4xl sm:text-5xl md:text-6xl lg:text-7xl px-2">
