@@ -6,9 +6,9 @@ export type Feature = {
 
 export const features: Feature[] = [
   {
-    title: "T3.chat Support",
+    title: "T3 Code Support",
     description:
-      "Runs cleanly alongside T3.chat workflows so you can manage browser-first and terminal-first agent work from the same surface.",
+      "Runs cleanly alongside T3 Code workflows so you can manage browser-first and terminal-first agent work from the same surface.",
     eyebrow: "01",
   },
   {

@@ -1,5 +1,7 @@
 function HeroDetails() {
-  return <div>HeroDetails</div>;
+  return <div>
+    <img src="/o1.png" alt="" />
+  </div>;
 }
 
 export default HeroDetails;
