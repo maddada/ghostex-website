@@ -56,6 +56,14 @@
 }
 
 :root {
+  --font-geist: "Avenir Next", "Segoe UI", sans-serif;
+  --font-manrope: "Avenir Next", "Segoe UI", sans-serif;
+  --font-dm-sans: "Inter", "Segoe UI", sans-serif;
+  --font-inter: "Inter", "Segoe UI", sans-serif;
+  --font-matter: "Avenir Next", "Segoe UI", sans-serif;
+  --font-ibm-plex-mono: "IBM Plex Mono", "SFMono-Regular", "Cascadia Code",
+    monospace;
+  --font-fira-code: "Fira Code", "SFMono-Regular", "Cascadia Code", monospace;
   --card: oklch(1 0 0);
   --card-foreground: oklch(0.145 0 0);
   --popover: oklch(1 0 0);
