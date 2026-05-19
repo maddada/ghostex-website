@@ -153,5 +153,11 @@ export default function DarkVeil({
       window.removeEventListener('resize', resize);
     };
   }, [hueShift, noiseIntensity, scanlineIntensity, speed, scanlineFrequency, warpAmount, resolutionScale]);
-  return <canvas ref={ref} className="w-full h-full block" />;
+  return (
+    <canvas
+      ref={ref}
+      style={{ backgroundColor: '#0a0a0a' }}
+      className="w-full h-full block"
+    />
+  );
 }

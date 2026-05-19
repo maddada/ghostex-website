@@ -1,6 +1,8 @@
+"use client"
 import DarkVeil from "@/components/DarkVeil";
 import Navbar from "@/components/navbar";
 import { Button } from "@/components/ui/button";
+import { AppleLogoIcon } from "@phosphor-icons/react";
 
 export default function Home() {
   return (
@@ -16,24 +18,31 @@ export default function Home() {
           resolutionScale={1}
         />
       </div>
-      <main className="z-10 flex-1 w-full max-w-7xl mx-auto">
-        {/* <Navbar /> */}
-        <section className="pt-25">
-          <h1 className="font-heading font-semibold tracking-tighter text-transparent bg-linear-0 from-primary/80 to-primary bg-clip-text max-w-full text-center text-4xl sm:text-5xl md:text-6xl lg:text-7xl px-2">
+      <main className="z-10 flex-1 ">
+        <Navbar />
+        <section className="pt-16 w-full max-w-7xl mx-auto">
+          <h1 className="font-heading font-semibold tracking-tighter leading-19 max-w-full text-center text-4xl sm:text-5xl md:text-6xl lg:text-7xl px-2">
             Ghostty Terminals Inspired <br /> by Codex App's UX
           </h1>
-          <p className="font-body text-center text-primary/60 max-w-2xl w-full mx-auto pt-5 px-2">
+          <p className="font-body text-center text-primary/85 max-w-2xl text-lg w-full mx-auto pt-5 px-2">
             Ghostex combines a high-performance Ghostty terminal with Chromium
             browser panes, VS Code editing, and polished session management to
             keep your agents productive and your Mac responsive.
           </p>
-          <div className="w-full p-2 flex items-center justify-center my-10 mb-15 gap-2">
-            <Button size={"lg"}>Download Now</Button>
-            <Button size={"lg"} variant={"outline"}>
+          <div className="w-full p-2 flex items-center justify-center my-5 mb-10 gap-2">
+            <Button size={"lg"} className={"py-6 px-4 rounded-none flex items-center justify-center gap-1 text-lg"}>
+              {/* <AppleLogoIcon size={32} weight="fill" /> */}
+              Download Now
+            </Button>
+            <Button
+              size={"lg"}
+              variant={"outline"}
+              className={"py-6 px-4 rounded-none text-lg"}
+            >
               Browse Features
             </Button>
           </div>
-          <div className="p-2 h-fit w-fit bg-primary/10 backdrop-blur-2xl rounded-2xl overflow-hidden">
+          <div className="p-1 h-fit w-fit bg-primary/65 backdrop-blur-2xl rounded-2xl overflow-hidden">
             <img src="/ghostex.png" alt="main" />
           </div>
         </section>

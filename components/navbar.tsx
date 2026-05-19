@@ -1,14 +1,20 @@
-import Link from "next/link";
 import { Button } from "./ui/button";
 
 function Navbar() {
   return (
-    <div className="w-full border-b border-border border-dashed relative mx-auto bg-background/90 backdrop-blur-2xl p-2 rounded flex items-center justify-between">
-      <PlusIcon className="absolute bottom-0 left-0 translate-y-2 -translate-x-2 rotate-45" />
-      <PlusIcon className="absolute bottom-0 right-0 translate-y-2 translate-x-2 rotate-45" />
-      <img alt="logo" src={"/icon.png"} className="size-12" />
-      <div className="flex gap-2">
-        <Button className={"font-body"}>Download Now</Button>
+    <div className="w-full relative mx-auto p-2 rounded flex items-center justify-between">
+      <div className="w-full max-w-7xl mx-auto flex items-center justify-between">
+        {/* <PlusIcon className="absolute bottom-0 left-0 translate-y-2 -translate-x-2 rotate-45" />
+      <PlusIcon className="absolute bottom-0 right-0 translate-y-2 translate-x-2 rotate-45" /> */}
+        <div className="flex items-center justify-center gap-2">
+          <img alt="logo" src={"/icon.png"} className="size-10" />
+          <span className="font-semibold text-xl font-heading">Ghostex</span>
+        </div>
+        <div className="flex gap-2">
+          <Button className={"font-body rounded-none"} variant={"outline"} >
+            Download Now
+          </Button>
+        </div>
       </div>
     </div>
   );
