@@ -4,11 +4,11 @@ import "./globals.css";
 import { Manrope, DM_Sans, Fira_Code } from "next/font/google";
 import { cn } from "@/lib/utils";
 
-const firaCodeFiraCode = Fira_Code({subsets:['menu','cyrillic','cyrillic-ext','greek','greek-ext','latin','latin-ext','symbols2'],weight:['300','400','500','600','700'],variable:'--font-fira-code'});
+const firaCodeFiraCode = Fira_Code({subsets:['cyrillic','cyrillic-ext','greek','greek-ext','latin','latin-ext','symbols2'],weight:['300','400','500','600','700'],variable:'--font-fira-code'});
 
-const dmSansDmSans = DM_Sans({subsets:['menu','latin','latin-ext'],weight:['100','1000','200','300','400','500','600','700','800','900'],variable:'--font-dm-sans'});
+const dmSansDmSans = DM_Sans({subsets:['latin','latin-ext'],weight:['100','1000','200','300','400','500','600','700','800','900'],variable:'--font-dm-sans'});
 
-const manropeManrope = Manrope({subsets:['menu','cyrillic','cyrillic-ext','greek','latin','latin-ext','vietnamese'],weight:['200','300','400','500','600','700','800'],variable:'--font-manrope'});
+const manropeManrope = Manrope({subsets:['cyrillic','cyrillic-ext','greek','latin','latin-ext','vietnamese'],weight:['200','300','400','500','600','700','800'],variable:'--font-manrope'});
 
 export const metadata: Metadata = {
   title: "Ghostex",
