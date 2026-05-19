@@ -75,11 +75,11 @@ export default function Home() {
             </div>
           </CometCard>
         </section>
-        <section className="pt-16 w-full max-w-7xl mx-auto min-h-screen">
-          <h1 className="font-heading font-semibold tracking-tighter leading-19 max-w-full text-center text-4xl sm:text-5xl md:text-6xl lg:text-7xl px-2">
+        <section className="pt-16 w-full max-w-7xl mx-auto min-h-screen bg-background">
+          <h1 className="font-heading font-semibold tracking-tighter leading-19 max-w-full text-left text-4xl sm:text-5xl md:text-6xl lg:text-7xl px-2">
             The Agent Manager for Power Users
           </h1>
-          <p className="font-body text-center text-primary/85 max-w-5xl text-lg w-full mx-auto pt-5 px-2">
+          <p className="font-body text-left text-primary/85 max-w-5xl text-lg w-full pt-5 px-2">
             Built for the long-haul. Sessions are persistent, automatically
             named, and resume exactly where you left off. Intuitive tabs and
             splits. Menu bar status indicators. Tons more features. All designed
