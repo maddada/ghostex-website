@@ -1,14 +1,13 @@
-"use client"
+"use client";
 import DarkVeil from "@/components/DarkVeil";
 import Navbar from "@/components/navbar";
 import { Button } from "@/components/ui/button";
-import { AppleLogoIcon } from "@phosphor-icons/react";
 
 export default function Home() {
   return (
     <div className="relative flex flex-1">
       <div className="absolute w-screen h-screen z-0">
-        <DarkVeil
+        {/* <DarkVeil
           hueShift={35}
           noiseIntensity={0.04}
           scanlineIntensity={1}
@@ -16,21 +15,39 @@ export default function Home() {
           scanlineFrequency={0}
           warpAmount={0.2}
           resolutionScale={1}
+        /> */}
+
+        {/* Crosshatch Art - Light Pattern */}
+        <div
+          className="absolute inset-0 z-0 pointer-events-none"
+          style={{
+            backgroundImage: `
+        repeating-linear-gradient(22.5deg, transparent, transparent 2px, rgba(75, 85, 99, 0.06) 2px, rgba(75, 85, 99, 0.06) 3px, transparent 3px, transparent 8px),
+        repeating-linear-gradient(67.5deg, transparent, transparent 2px, rgba(107, 114, 128, 0.05) 2px, rgba(107, 114, 128, 0.05) 3px, transparent 3px, transparent 8px),
+        repeating-linear-gradient(112.5deg, transparent, transparent 2px, rgba(55, 65, 81, 0.04) 2px, rgba(55, 65, 81, 0.04) 3px, transparent 3px, transparent 8px),
+        repeating-linear-gradient(157.5deg, transparent, transparent 2px, rgba(31, 41, 55, 0.03) 2px, rgba(31, 41, 55, 0.03) 3px, transparent 3px, transparent 8px)
+      `,
+          }}
         />
       </div>
       <main className="z-10 flex-1 ">
         <Navbar />
         <section className="pt-16 w-full max-w-7xl mx-auto">
-          <h1 className="font-heading font-semibold tracking-tighter leading-19 max-w-full text-center text-4xl sm:text-5xl md:text-6xl lg:text-7xl px-2">
+          <h1 className="font-heading font-semibold tracking-tighter leading-19 max-w-full text-left text-4xl sm:text-5xl md:text-6xl lg:text-7xl px-2">
             Ghostty Terminals Inspired <br /> by Codex App's UX
           </h1>
-          <p className="font-body text-center text-primary/85 max-w-2xl text-lg w-full mx-auto pt-5 px-2">
+          <p className="font-body text-left text-primary/85 max-w-2xl text-lg w-full  pt-5 px-2">
             Ghostex combines a high-performance Ghostty terminal with Chromium
             browser panes, VS Code editing, and polished session management to
             keep your agents productive and your Mac responsive.
           </p>
-          <div className="w-full p-2 flex items-center justify-center my-5 mb-10 gap-2">
-            <Button size={"lg"} className={"py-6 px-4 rounded-none flex items-center justify-center gap-1 text-lg"}>
+          <div className="w-full p-2 flex items-center  my-5 mb-10 gap-2">
+            <Button
+              size={"lg"}
+              className={
+                "py-6 px-4 rounded-none flex items-center justify-center gap-1 text-lg"
+              }
+            >
               {/* <AppleLogoIcon size={32} weight="fill" /> */}
               Download Now
             </Button>
@@ -45,6 +62,17 @@ export default function Home() {
           <div className="p-1 h-fit w-fit bg-primary/65 backdrop-blur-2xl rounded-2xl overflow-hidden">
             <img src="/ghostex.png" alt="main" />
           </div>
+        </section>
+        <section className="pt-16 w-full max-w-7xl mx-auto min-h-screen">
+          <h1 className="font-heading font-semibold tracking-tighter leading-19 max-w-full text-center text-4xl sm:text-5xl md:text-6xl lg:text-7xl px-2">
+            The Agent Manager for Power Users
+          </h1>
+          <p className="font-body text-center text-primary/85 max-w-5xl text-lg w-full mx-auto pt-5 px-2">
+            Built for the long-haul. Sessions are persistent, automatically
+            named, and resume exactly where you left off. Intuitive tabs and
+            splits. Menu bar status indicators. Tons more features. All designed
+            to keep you in flow without sacrificing performance.
+          </p>
         </section>
       </main>
     </div>
