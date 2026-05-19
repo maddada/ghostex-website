@@ -8,7 +8,7 @@ export default function Home() {
   return (
     <div className="relative flex flex-1">
       <div className="absolute w-screen h-screen z-0">
-        {/* <DarkVeil
+        <DarkVeil
           hueShift={35}
           noiseIntensity={0.04}
           scanlineIntensity={1}
@@ -16,20 +16,29 @@ export default function Home() {
           scanlineFrequency={0}
           warpAmount={0.2}
           resolutionScale={1}
+        />
+        {/* very danger below */}
+        {/* <div
+          className="absolute inset-0 z-0"
+          style={{
+            background:
+              "radial-gradient(125% 125% at 50% 90%, #0a0a0a 40%, #172554 100%)",
+          }}
         /> */}
-
-        {/* Crosshatch Art - Light Pattern */}
-        <div
-          className="absolute inset-0 z-0 pointer-events-none"
+        {/* <div
+          className="absolute inset-0 opacity-60"
           style={{
             backgroundImage: `
-        repeating-linear-gradient(22.5deg, transparent, transparent 2px, rgba(75, 85, 99, 0.06) 2px, rgba(75, 85, 99, 0.06) 3px, transparent 3px, transparent 8px),
-        repeating-linear-gradient(67.5deg, transparent, transparent 2px, rgba(107, 114, 128, 0.05) 2px, rgba(107, 114, 128, 0.05) 3px, transparent 3px, transparent 8px),
-        repeating-linear-gradient(112.5deg, transparent, transparent 2px, rgba(55, 65, 81, 0.04) 2px, rgba(55, 65, 81, 0.04) 3px, transparent 3px, transparent 8px),
-        repeating-linear-gradient(157.5deg, transparent, transparent 2px, rgba(31, 41, 55, 0.03) 2px, rgba(31, 41, 55, 0.03) 3px, transparent 3px, transparent 8px)
+        linear-gradient(45deg, transparent 49%, #262626 49%, #262626 51%, transparent 51%),
+        linear-gradient(-45deg, transparent 49%, #262626  49%, #262626 51%, transparent 51%)
       `,
+            backgroundSize: "40px 40px",
+            WebkitMaskImage:
+              "radial-gradient(ellipse 70% 60% at 50% 0%, #000 60%, transparent 100%)",
+            maskImage:
+              "radial-gradient(ellipse 70% 60% at 50% 0%, #000 60%, transparent 100%)",
           }}
-        />
+        /> */}
       </div>
       <main className="z-10 flex-1 ">
         <Navbar />
@@ -60,7 +69,7 @@ export default function Home() {
               Browse Features
             </Button>
           </div>
-          <CometCard rotateDepth={5} translateDepth={1} >
+          <CometCard rotateDepth={5} translateDepth={1}>
             <div className="p-1 h-fit w-fit bg-primary/65 backdrop-blur-2xl rounded-2xl overflow-hidden">
               <img src="/ghostex.png" alt="main" />
             </div>
