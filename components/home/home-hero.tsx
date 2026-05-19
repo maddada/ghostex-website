@@ -38,7 +38,7 @@ export default function HomeHero() {
         </Button>
       </div>
       <CometCard rotateDepth={1} translateDepth={1}>
-        <div className="h-fit w-fit overflow-hidden rounded-2xl bg-primary/65 p-1 backdrop-blur-2xl">
+        <div className="h-fit w-fit overflow-hidden rounded sm:rounded-xl lg:rounded-2xl bg-primary/65 p-1 backdrop-blur-2xl mx-2">
           <Image
             src={ghostexImage}
             alt="Ghostex app preview"
