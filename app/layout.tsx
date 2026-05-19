@@ -28,9 +28,19 @@ export default function RootLayout({
   return (
     <html
       lang="en"
-      className={cn("h-full", "antialiased font-body", interInter.variable, ibmPlexMonoIbmPlexMono.variable, manropeManrope.variable, dmSansDmSans.variable, firaCodeFiraCode.variable)}
+      className={cn(
+        "h-full",
+        "antialiased font-body",
+        interInter.variable,
+        ibmPlexMonoIbmPlexMono.variable,
+        manropeManrope.variable,
+        dmSansDmSans.variable,
+        firaCodeFiraCode.variable,
+      )}
     >
-      <body className="min-h-full flex flex-col dark">{children}</body>
+      <body className="min-h-full flex flex-col dark bg-[#000000]">
+        {children}
+      </body>
     </html>
   );
 }

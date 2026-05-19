@@ -9,8 +9,8 @@ export default function Home() {
     <div className="relative flex flex-1">
       <div className="absolute w-screen h-screen z-0">
         <DarkVeil
-          hueShift={35}
-          noiseIntensity={0.04}
+          hueShift={25}
+          noiseIntensity={0.01}
           scanlineIntensity={1}
           speed={0.6}
           scanlineFrequency={0}
@@ -43,7 +43,7 @@ export default function Home() {
       <main className="z-10 flex-1 ">
         <Navbar />
         <section className="pt-16 w-full max-w-7xl mx-auto">
-          <h1 className="font-heading font-semibold tracking-tighter leading-19 max-w-full text-left text-4xl sm:text-5xl md:text-6xl lg:text-7xl px-2">
+          <h1 className="font-heading tracking-tight text-primary/96 max-w-full text-left text-4xl sm:text-5xl md:text-6xl lg:text-7xl px-2">
             Ghostty Terminals Inspired <br /> by Codex App's UX
           </h1>
           <p className="font-body text-left text-primary/85 max-w-2xl text-lg w-full  pt-5 px-2">
@@ -69,14 +69,14 @@ export default function Home() {
               Browse Features
             </Button>
           </div>
-          <CometCard rotateDepth={5} translateDepth={1}>
+          <CometCard rotateDepth={1} translateDepth={1}>
             <div className="p-1 h-fit w-fit bg-primary/65 backdrop-blur-2xl rounded-2xl overflow-hidden">
               <img src="/ghostex.png" alt="main" />
             </div>
           </CometCard>
         </section>
-        <section className="pt-16 w-full max-w-7xl mx-auto min-h-screen bg-background">
-          <h1 className="font-heading font-semibold tracking-tighter leading-19 max-w-full text-left text-4xl sm:text-5xl md:text-6xl lg:text-7xl px-2">
+        <section className="pt-16 w-full max-w-7xl mx-auto min-h-screen">
+          <h1 className="font-heading font-semibold tracking-tighter max-w-full text-left text-4xl sm:text-5xl md:text-6xl lg:text-7xl px-2">
             The Agent Manager for Power Users
           </h1>
           <p className="font-body text-left text-primary/85 max-w-5xl text-lg w-full pt-5 px-2">
