@@ -16,20 +16,25 @@ export default function Home() {
           resolutionScale={1}
         />
       </div>
-      <main className="z-10 flex-1 w-full max-w-4xl mx-auto">
+      <main className="z-10 flex-1 w-full max-w-7xl mx-auto">
         {/* <Navbar /> */}
-        <section className="pt-30">
-          <h1 className="font-heading font-semibold tracking-tighter text-transparent bg-linear-0 from-primary/80 to-primary bg-clip-text max-w-full text-center text-7xl">
+        <section className="pt-25">
+          <h1 className="font-heading font-semibold tracking-tighter text-transparent bg-linear-0 from-primary/80 to-primary bg-clip-text max-w-full text-center text-4xl sm:text-5xl md:text-6xl lg:text-7xl px-2">
             Ghostty Terminals Inspired <br /> by Codex App's UX
           </h1>
-          <p className="font-body text-center text-primary/60 max-w-2xl w-full mx-auto pt-5">
+          <p className="font-body text-center text-primary/60 max-w-2xl w-full mx-auto pt-5 px-2">
             Ghostex combines a high-performance Ghostty terminal with Chromium
             browser panes, VS Code editing, and polished session management to
             keep your agents productive and your Mac responsive.
           </p>
-          <div className="w-full p-2 flex items-center justify-center my-10 gap-2">
+          <div className="w-full p-2 flex items-center justify-center my-10 mb-15 gap-2">
             <Button size={"lg"}>Download Now</Button>
-            <Button size={"lg"} variant={"outline"}>Browse Features</Button>
+            <Button size={"lg"} variant={"outline"}>
+              Browse Features
+            </Button>
+          </div>
+          <div className="p-2 h-fit w-fit bg-primary/10 backdrop-blur-2xl rounded-2xl overflow-hidden">
+            <img src="/ghostex.png" alt="main" />
           </div>
         </section>
       </main>
