@@ -1,6 +1,7 @@
 "use client";
 
 import DarkVeil from "@/components/DarkVeil";
+import HeroDetails from "@/components/home/hero-details";
 import HomeFeatures from "@/components/home/home-features";
 import HomeHero from "@/components/home/home-hero";
 import Navbar from "@/components/navbar";
@@ -23,6 +24,7 @@ export default function Home() {
         <Navbar />
         <HomeHero />
         <HomeFeatures />
+        <HeroDetails />
       </main>
     </div>
   );
