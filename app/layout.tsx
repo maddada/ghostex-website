@@ -1,16 +1,19 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
+
 import "./globals.css";
+import { Inter, Manrope, IBM_Plex_Mono, DM_Sans, Fira_Code } from "next/font/google";
+import { cn } from "@/lib/utils";
 
-const geist = Geist({
-  variable: "--font-geist",
-  subsets: ["latin"],
-});
+const firaCodeFiraCode = Fira_Code({subsets:['cyrillic','cyrillic-ext','greek','greek-ext','latin','latin-ext','symbols2'],weight:['300','400','500','600','700'],variable:'--font-fira-code'});
 
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
-});
+const dmSansDmSans = DM_Sans({subsets:['latin','latin-ext'],weight:['100','1000','200','300','400','500','600','700','800','900'],variable:'--font-dm-sans'});
+
+const ibmPlexMonoIbmPlexMono = IBM_Plex_Mono({subsets:['cyrillic','cyrillic-ext','latin','latin-ext','vietnamese'],weight:['100','200','300','400','500','600','700'],variable:'--font-ibm-plex-mono'});
+
+const manropeManrope = Manrope({subsets:['cyrillic','cyrillic-ext','greek','latin','latin-ext','vietnamese'],weight:['200','300','400','500','600','700','800'],variable:'--font-manrope'});
+
+const interInter = Inter({subsets:['cyrillic','cyrillic-ext','greek','greek-ext','latin','latin-ext','vietnamese'],weight:['100','200','300','400','500','600','700','800','900'],variable:'--font-inter'});
+
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -25,7 +28,7 @@ export default function RootLayout({
   return (
     <html
       lang="en"
-      className={`${geist.variable} ${geistMono.variable} h-full antialiased`}
+      className={cn("h-full", "antialiased font-body", interInter.variable, ibmPlexMonoIbmPlexMono.variable, manropeManrope.variable, dmSansDmSans.variable, firaCodeFiraCode.variable)}
     >
       <body className="min-h-full flex flex-col dark">{children}</body>
     </html>

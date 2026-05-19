@@ -15,8 +15,18 @@ export default function Home() {
           resolutionScale={1}
         />
       </div> */}
-      <main className="z-10 flex-1 w-full max-w-4xl mx-auto border-x border-border border-dashed">
+      <main className="z-10 flex-1 w-full max-w-4xl mx-auto border-x border-border border-dashed bg-background">
         <Navbar />
+        <section className="pt-20">
+          <h1 className="font-heading font-semibold tracking-tighter text-transparent bg-linear-0 from-primary/80 to-primary bg-clip-text max-w-full text-center text-6xl">
+            Ghostty Terminals Inspired <br /> by Codex App's UX
+          </h1>
+          <p className="font-body text-center text-secondary max-w-2xl w-full mx-auto pt-5">
+            Ghostex combines a high-performance Ghostty terminal with Chromium
+            browser panes, VS Code editing, and polished session management to
+            keep your agents productive and your Mac responsive.
+          </p>
+        </section>
       </main>
     </div>
   );
