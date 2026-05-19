@@ -3,6 +3,7 @@ import DarkVeil from "@/components/DarkVeil";
 import Navbar from "@/components/navbar";
 import { Button } from "@/components/ui/button";
 import { CometCard } from "@/components/ui/comet-card";
+import { PlusIcon } from "@phosphor-icons/react";
 
 export default function Home() {
   return (
@@ -43,15 +44,15 @@ export default function Home() {
       <main className="z-10 flex-1 ">
         <Navbar />
         <section className="pt-16 w-full max-w-7xl mx-auto">
-          <h1 className="font-heading tracking-tight text-primary/96 max-w-full text-left text-4xl sm:text-5xl md:text-6xl lg:text-7xl px-2">
+          <h1 className="font-heading tracking-tight text-primary/96 max-w-full text-center text-4xl sm:text-5xl md:text-6xl lg:text-7xl px-2">
             Ghostty Terminals Inspired <br /> by Codex App's UX
           </h1>
-          <p className="font-body text-left text-primary/85 max-w-2xl text-lg w-full  pt-5 px-2">
+          <p className="font-body text-center text-primary/85 max-w-2xl text-lg w-full mx-auto  pt-5 px-2">
             Ghostex combines a high-performance Ghostty terminal with Chromium
             browser panes, VS Code editing, and polished session management to
             keep your agents productive and your Mac responsive.
           </p>
-          <div className="w-full p-2 flex items-center  my-5 mb-10 gap-2">
+          <div className="w-full p-2 flex items-center justify-center  my-5 mb-10 gap-2">
             <Button
               size={"lg"}
               className={
@@ -64,8 +65,15 @@ export default function Home() {
             <Button
               size={"lg"}
               variant={"outline"}
-              className={"py-6 px-4 rounded-none text-lg"}
+              className={
+                "py-6 px-4 rounded-none text-lg border-dashed relative"
+              }
             >
+              <PlusIcon className="absolute -top-2 -left-2 text-border" />
+              <PlusIcon className="absolute -bottom-2 -left-2 text-border" />
+              <PlusIcon className="absolute -bottom-2 -right-2 text-border" />
+              <PlusIcon className="absolute -top-2 -right-2 text-border" />
+              
               Browse Features
             </Button>
           </div>
@@ -76,10 +84,10 @@ export default function Home() {
           </CometCard>
         </section>
         <section className="pt-16 w-full max-w-7xl mx-auto min-h-screen">
-          <h1 className="font-heading font-semibold tracking-tighter max-w-full text-left text-4xl sm:text-5xl md:text-6xl lg:text-7xl px-2">
+          <h1 className="font-heading font-semibold tracking-tighter max-w-full text-center text-4xl sm:text-5xl md:text-6xl lg:text-7xl px-2">
             The Agent Manager for Power Users
           </h1>
-          <p className="font-body text-left text-primary/85 max-w-5xl text-lg w-full pt-5 px-2">
+          <p className="font-body text-center mx-auto text-primary/85 max-w-5xl text-lg w-full pt-5 px-2">
             Built for the long-haul. Sessions are persistent, automatically
             named, and resume exactly where you left off. Intuitive tabs and
             splits. Menu bar status indicators. Tons more features. All designed
