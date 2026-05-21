@@ -1,4 +1,4 @@
-"use client"
+"use client";
 import Image from "next/image";
 
 import { PlusIcon } from "@phosphor-icons/react";
@@ -6,6 +6,7 @@ import { PlusIcon } from "@phosphor-icons/react";
 import ghostexImage from "@/public/ghostex.png";
 import { Button } from "@/components/ui/button";
 import { CometCard } from "@/components/ui/comet-card";
+import Link from "next/link";
 
 export default function HomeHero() {
   return (
@@ -25,17 +26,19 @@ export default function HomeHero() {
         >
           Download Now
         </Button>
-        <Button
-          size="lg"
-          variant="outline"
-          className="relative rounded-none border-dashed px-4 py-6 text-lg"
-        >
-          <PlusIcon className="absolute -left-2 -top-2 text-border" />
-          <PlusIcon className="absolute -bottom-2 -left-2 text-border" />
-          <PlusIcon className="absolute -bottom-2 -right-2 text-border" />
-          <PlusIcon className="absolute -right-2 -top-2 text-border" />
-          Browse Features
-        </Button>
+        <Link href="#product-showcase">
+          <Button
+            size="lg"
+            variant="outline"
+            className="relative rounded-none border-dashed px-4 py-6 text-lg"
+          >
+            <PlusIcon className="absolute -left-2 -top-2 text-border" />
+            <PlusIcon className="absolute -bottom-2 -left-2 text-border" />
+            <PlusIcon className="absolute -bottom-2 -right-2 text-border" />
+            <PlusIcon className="absolute -right-2 -top-2 text-border" />
+            Browse Features
+          </Button>
+        </Link>
       </div>
       <CometCard rotateDepth={1} translateDepth={1}>
         <div className="h-fit w-fit overflow-hidden rounded sm:rounded-xl lg:rounded-2xl bg-primary/65 p-1 backdrop-blur-2xl mx-2">
