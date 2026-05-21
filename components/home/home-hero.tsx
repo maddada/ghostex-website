@@ -7,8 +7,10 @@ import ghostexImage from "@/public/ghostex.png";
 import { Button } from "@/components/ui/button";
 import { CometCard } from "@/components/ui/comet-card";
 import Link from "next/link";
+import { useLenis } from "lenis/react";
 
 export default function HomeHero() {
+  const lenis = useLenis();
   return (
     <section className="mx-auto w-full max-w-7xl pt-16">
       <h1 className="font-heading max-w-full px-2 text-center text-4xl tracking-tight text-primary sm:text-5xl md:text-6xl lg:text-7xl">
@@ -26,7 +28,13 @@ export default function HomeHero() {
         >
           Download Now
         </Button>
-        <Link href="#product-showcase">
+        <a
+          href="#product-showcase"
+          onClick={(e) => {
+            e.preventDefault();
+            lenis?.scrollTo("#product-showcase");
+          }}
+        >
           <Button
             size="lg"
             variant="outline"
@@ -38,7 +46,7 @@ export default function HomeHero() {
             <PlusIcon className="absolute -right-2 -top-2 text-border" />
             Browse Features
           </Button>
-        </Link>
+        </a>
       </div>
       <CometCard rotateDepth={1} translateDepth={1}>
         <div className="h-fit w-fit overflow-hidden rounded sm:rounded-xl lg:rounded-2xl bg-primary/65 p-1 backdrop-blur-2xl mx-2">
