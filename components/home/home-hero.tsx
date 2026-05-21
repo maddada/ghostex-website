@@ -3,10 +3,10 @@ import Image from "next/image";
 
 import { PlusIcon } from "@phosphor-icons/react";
 
-import ghostexImage from "@/public/ghostex.png";
 import { Button } from "@/components/ui/button";
 import { CometCard } from "@/components/ui/comet-card";
-import Link from "next/link";
+import { DownloadDialog } from "@/components/home/download-dialog";
+import ghostexImage from "@/public/ghostex.png";
 import { useLenis } from "lenis/react";
 
 export default function HomeHero() {
@@ -17,17 +17,12 @@ export default function HomeHero() {
         Ghostty Terminals Inspired <br /> by Codex App&apos;s UX
       </h1>
       <p className="font-body mx-auto w-full max-w-2xl px-2 pt-5 text-center text-lg text-primary/85">
-        Ghostex combines a high-performance Ghostty terminal with Chromium
+        Ghostex combines a high-performance Ghostty terminal with <br className="md:block hidden" /> Chromium
         browser panes, VS Code editing, and polished session management to keep
         your agents productive and your Mac responsive.
       </p>
       <div className="my-5 mb-10 flex w-full items-center justify-center gap-2 p-2">
-        <Button
-          size="lg"
-          className="flex items-center justify-center gap-1 rounded-none px-4 py-6 text-lg"
-        >
-          Download Now
-        </Button>
+        <DownloadDialog />
         <a
           href="#product-showcase"
           onClick={(e) => {

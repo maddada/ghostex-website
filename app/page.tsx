@@ -5,6 +5,7 @@ import HeroDetails from "@/components/home/hero-details";
 import HomeFeatures from "@/components/home/home-features";
 import HomeHero from "@/components/home/home-hero";
 import Navbar from "@/components/navbar";
+import SiteFooter from "@/components/site-footer";
 
 export default function Home() {
   return (
@@ -25,6 +26,7 @@ export default function Home() {
         <HomeHero />
         <HomeFeatures />
         <HeroDetails />
+        <SiteFooter />
       </main>
     </div>
   );

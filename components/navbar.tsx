@@ -3,6 +3,8 @@ import Image from "next/image";
 import logoIcon from "@/public/icon.png";
 
 import { Button } from "./ui/button";
+import { GitHubStars } from "./github-stars";
+import { GithubLogoIcon, XLogoIcon } from "@phosphor-icons/react";
 
 export default function Navbar() {
   return (
@@ -18,8 +20,11 @@ export default function Navbar() {
           <span className="font-heading text-xl font-semibold">Ghostex</span>
         </div>
         <div className="flex gap-2">
-          <Button className="font-body rounded-none" variant="outline">
-            Download Now
+          <Button className="font-body font-thin rounded-none" variant="ghost">
+            <GithubLogoIcon weight="fill" /> Github
+          </Button>
+          <Button className="font-body font-thin rounded-none" variant="ghost">
+            <XLogoIcon weight="fill" /> @maddada
           </Button>
         </div>
       </div>
