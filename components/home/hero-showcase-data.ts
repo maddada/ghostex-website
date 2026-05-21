@@ -27,7 +27,7 @@ export const heroShowcaseItems: HeroShowcaseItem[] = [
     id: "agent-clis",
     navLabel: "All Agent CLIs",
     headline:
-      "All Agent CLIs supported (please send an issue or PR for integrating any missing agent CLI)",
+      "All Agent CLIs supported ",
     image: o2,
     alt: "Supported agent CLI integrations",
   },
@@ -35,7 +35,7 @@ export const heroShowcaseItems: HeroShowcaseItem[] = [
     id: "mobile-remote",
     navLabel: "iOS & Android remote",
     headline:
-      "Android and iOS apps for remote controlling ANY Agent CLI running on your Mac (live remote control that includes all features)",
+      "Android and iOS apps for remote controlling ANY Agent CLI running on your Mac",
     image: o3,
     alt: "Mobile apps for remote agent control",
   },
