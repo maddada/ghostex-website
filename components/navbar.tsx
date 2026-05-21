@@ -2,9 +2,9 @@ import Image from "next/image";
 
 import logoIcon from "@/public/icon.png";
 
-import { Button } from "./ui/button";
-import { GitHubStars } from "./github-stars";
 import { GithubLogoIcon, XLogoIcon } from "@phosphor-icons/react";
+import Link from "next/link";
+import { Button } from "./ui/button";
 
 export default function Navbar() {
   return (
@@ -20,12 +20,22 @@ export default function Navbar() {
           <span className="font-heading text-xl font-semibold">Ghostex</span>
         </div>
         <div className="flex gap-2">
-          <Button className="font-body font-thin rounded-none" variant="ghost">
-            <GithubLogoIcon weight="fill" /> Github
-          </Button>
-          <Button className="font-body font-thin rounded-none" variant="ghost">
-            <XLogoIcon weight="fill" /> @maddada
-          </Button>
+          <Link href={"https://github.com/maddada/ghostex"}>
+            <Button
+              className="font-body font-thin rounded-none"
+              variant="ghost"
+            >
+              <GithubLogoIcon weight="fill" /> Github
+            </Button>
+          </Link>
+          <Link href={"https://x.com/maddada"}>
+            <Button
+              className="font-body font-thin rounded-none"
+              variant="ghost"
+            >
+              <XLogoIcon weight="fill" /> @maddada
+            </Button>
+          </Link>
         </div>
       </div>
     </div>
