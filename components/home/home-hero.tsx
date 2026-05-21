@@ -11,7 +11,7 @@ import Link from "next/link";
 export default function HomeHero() {
   return (
     <section className="mx-auto w-full max-w-7xl pt-16">
-      <h1 className="font-heading max-w-full px-2 text-center text-4xl tracking-tight text-primary/96 sm:text-5xl md:text-6xl lg:text-7xl">
+      <h1 className="font-heading max-w-full px-2 text-center text-4xl tracking-tight text-primary sm:text-5xl md:text-6xl lg:text-7xl">
         Ghostty Terminals Inspired <br /> by Codex App&apos;s UX
       </h1>
       <p className="font-body mx-auto w-full max-w-2xl px-2 pt-5 text-center text-lg text-primary/85">
